@@ -1,6 +1,5 @@
 {
     "name" : "creditsimple/thinkific-php",
-    "version": "0.1",
     "description" : "PHP SDK for interacting with the Thinktastic LMS Api",
     "keywords" : [ "thinkific", "lms" ],
     "homepage" : "https://github.com/creditsimple/thinkific-php",
