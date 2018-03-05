@@ -24,7 +24,7 @@ requirement for thinkific-api to `dev-master`
 
 #### Via command line:
 ```shell
-composer require elliotboney/thinkific-php
+composer require creditsimple/thinkific-php
 ```
 
 
