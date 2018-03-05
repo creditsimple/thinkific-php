@@ -7,8 +7,14 @@ class Courses extends AbstractApi {
     /**
      * @throws ApiException
      */
-    public function getAll() {
-        throw new ApiException(["Not Supported"=>["The API Call 'getAll()' is not supported by the Thinkific Api"]]);
+    public function getAll($page=1, $limit = 25)
+    {
+        $class_name = preg_split( '/\\\/', get_class( $this ) );
+
+        return json_decode( $this->client->request( [
+            "endpoint" => strtolower( array_pop( $class_name ) ),
+            "query"       => ['page' => 1, 'limit' => 25],
+        ] ) );
     }
 
     /**
