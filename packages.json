@@ -1,0 +1,7 @@
+{
+  "packages": {
+    "creditsimple/thinkific-php": {
+      "dev-master": { @composer.json }
+    }
+  }
+}
