@@ -2,7 +2,6 @@
   "packages": {
     "creditsimple/thinkific-php": {
       "dev-master": { @composer.json }
-      "version": "0.1"
     }
   }
 }
