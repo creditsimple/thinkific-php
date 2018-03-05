@@ -1,14 +1,20 @@
 {
-    "name" : "elliotboney/thinkific-php",
+    "name" : "creditsimple/thinkific-php",
     "description" : "PHP SDK for interacting with the Thinktastic LMS Api",
     "keywords" : [ "thinkific", "lms" ],
-    "homepage" : "https://github.com/elliotboney/thinkific-php",
+    "homepage" : "https://github.com/creditsimple/thinkific-php",
     "license" : "MIT",
     "authors" : [
         {
             "name" : "Elliot Boney",
             "email" : "elliotboney@gmail.com",
             "homepage" : "http://elliotboney.com/",
+            "role" : "Developer"
+        },
+        {
+            "name" : "Sergei Yevseyev",
+            "email" : "sergei@creditsimple.com",
+            "homepage" : "http://creditsimple.com/",
             "role" : "Developer"
         }
     ],
