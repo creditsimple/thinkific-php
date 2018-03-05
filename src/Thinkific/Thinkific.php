@@ -91,7 +91,7 @@ class Thinkific {
         }
 
         try {
-            $client = new Client();
+            $client = new Client( [ 'verify' => false ] );
 
             $response = $client->request( $method, $url, $reqoptions );
 
