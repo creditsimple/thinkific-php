@@ -16,7 +16,7 @@ requirement for thinkific-api to `dev-master`
 ```json
 {
    "require": {
-      "elliotboney/thinkific-php": "dev-master"
+      "creditsimple/thinkific-php": "dev-master"
    }
 }
 ```
