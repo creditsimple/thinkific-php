@@ -4,12 +4,22 @@ namespace Thinkific\Api;
 
 class Enrollments extends AbstractApi {
 
+    public function getAll()
+    {
+        $class_name = preg_split( '/\\\/', get_class( $this ) );
+
+        return json_decode( $this->client->request( [
+            "endpoint" => strtolower( array_pop( $class_name ) ),
+            "query"       => ['page' => 1, 'limit' => 25],
+        ] ) );
+    }
+
     public function add( $data ) {
         $class_name = preg_split( '/\\\/', get_class( $this ) );
         return json_decode( $this->client->request( [
             "endpoint"   => strtolower( array_pop( $class_name ) ),
             "httpmethod" => "POST",
-            "query"      => $data
+            "body"      => $data
         ] ), true );
     }
 
